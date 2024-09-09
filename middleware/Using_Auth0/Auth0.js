@@ -1,7 +1,6 @@
 const { auth } = require("express-oauth2-jwt-bearer");
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
-const logger = require("../utils/logger"); // Optional logger import for error logging
+const User = require("../models/user"); 
 
 // Auth0 JWT Middleware for checking the token
 const jwtCheck = auth({

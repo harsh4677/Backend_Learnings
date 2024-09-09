@@ -29,7 +29,6 @@ const verifyToken = async (req: Request, res: Response, next: NextFunction) => {
         req.user = user;
         next();
     } 
-    
     catch (err) {
         return next(errorHandler(401, "Invalid token"));
     }
